@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family:serif;
+}
+.right-menu li{
+    display: inline-block;
+    margin-top: 30px;
+}
+.right-menu li .fa-brands{
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.navbar-brand img{
+    width: 150px;
+}
+
+.header{
+    background-color: #f5f6fc;
+}
+.navbar{
+    padding: 0px 35px;
+}
+.navbar-toggler{
+    border:none !important;
+    outline:none !important;
+    margin-top: -20px;
+    padding: 0%;
+}
+.right-menu{
+    position: absolute;
+    left: 70%;
+}
+
+@media screen and (max-width:369px) {
+    .navbar .container-fluid{
+        margin-top: 20px;
+        padding: 0px 20px;
+    }
+    .right-menu{
+        padding: 0;
+    }
+    .right-menu li{
+        padding: 0;
+    }
+    .navbar-brand img{
+        margin-bottom: 20px;
+    }
+    .right-menu{
+        position: static;
+    }
+}
+
+
+
+
+
+
+.banner-img{
+    margin: 80px 115px;
+    width: 55%;
+}
+.banner-img img{
+    width: 100%;
+    margin-bottom: -80px;
+}
+.banner{
+    position: relative;
+}
+.banner-title{
+    position: absolute;
+    left: 40%;
+    top: 20%;
+}
+.banner-title h1{
+    font-size: 55px;
+    background:rgba(0, 0, 0, 0.75);
+    color: #fff;
+    line-height: 70px;
+    padding: 0px 0px 0px 10px;
+}
+.banner-title span{
+    color: black;
+    background: #f5f6fc;
+    padding: 0px 0px;
+    border-bottom: 4px solid #0058A9;
+    margin-left: 20px;
+    font-size: 55px;
+    line-height: 70px;
+    padding: 0px 10px 0px 10px;
+}
+
+
+/* fashion trends */
+
+.fashion-trends{
+    padding: 100px 0;
+}
+.fashion-box{
+    margin: 80px 0;
+}
+.title-style h1{
+    padding: 40px 0;
+}
+.title-style{
+    margin: 0 auto 80px;
+    height: 120px;
+    width: 80%;
+    max-width: 700px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 4px 5px 0 rgba(0,0,50,0.5);
+}
+.title-style::after{
+    content: '';
+    height: 100px;
+    width: 200px;
+    background-color: #f992a6;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: -1;
+}
+.title-style::before{
+    content: '';
+    height: 100px;
+    width: 200px;
+    background-color: #f992a6;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    z-index: -1;
+}
+.trending-img{
+    position: relative;
+    margin-bottom: 15px;
+}
+.trending-img img{
+    width: 100%;
+}
+.btn-buy{
+    width: 150px;
+    padding: 10px 0;
+    outline: none !important;
+    border: 0;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background: #fff;
+    color: #000;
+    transform: translate(-50%,0);
+    transition: .6s;
+    opacity: 0;
+    z-index: 1;
+}
+.trending-img:hover .btn-buy{
+    transform: translate(-50%,50%);
+    bottom: 50%;
+    opacity: 1;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background:#333;
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+    top: 0;
+}
+.trending-img:hover .overlay{
+    opacity: .4;
+    height: 100%;
+}
+
+
+/* offer section */
+.offer{
+    background-image: url(img/fashion.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.row{
+    margin: initial !important;
+}
+.subscribe{
+    max-width: 500px;
+    margin-top: 80px;
+    padding: 60px;
+    background:#ffffff8c;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.subscribe a{
+    width: 100px;
+    display: block;
+    color: #fff;
+    background: #000;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+}
+.offer img{
+    width: 300px;
+    height: 400px;
+    margin-bottom: -100px;
+    margin-top: 150px;
+}   
+
+/* fashion blog */
+.fashion-blog{
+    margin: 250px 0 100px 0;
+}
+.blog-img{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    display: inline-block;
+}
+.blog-img img{
+    width: 100%;
+    height: 100%;
+}
+.fashion-blog h5{
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* fashion brands */
+.fashion-brands{
+    margin-bottom: 150px;
+    text-align: center;
+}
+.brand-logo{
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 40px 0px rgba(110, 130, 208, .18);
+}
+.brand-logo img{
+    width: 100px;
+    margin: 50px auto;
+}
+
+
+/* footer */
+.footer{
+    margin-top: 60px;
+    position: relative;
+    background-color: #f5f6fc;
+}
+.payment, .insta-img, .app{
+    margin: 50px auto;
+}
+
+.payment img{
+    width: 300px;
+    cursor: pointer;
+}
+
+.insta-img img{
+    width: 75px;
+    padding: 5px;
+    cursor: pointer;
+}
+.app img{
+    width: 150px;
+}
+.footer h5{
+    margin-bottom: 50px;
+}
+.footer h5::before{
+    content: '';
+    width: 70px;
+    height: 4px;
+    background: #f992a6;
+    position: absolute;
+    top: 80px;
+}
+
+.follow-btns{
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer .fa-brands{
+    cursor: pointer;
+}
+
+
+/* media queries for small devices */
+@media screen and (max-width:900px){
+    .banner-img{
+        margin: 40px auto;
+        width: 80%;
+    }
+    .banner-title {
+        position: absolute;
+        left: 50%;
+        top: 150px;
+        transform: translateX(-50%);
+    }
+    .banner-title h1, .banner-title span{
+        font-size: 20px;
+        padding: 5px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .title-style h1{
+        font-size: 24px;
+        padding: 25px 0;
+
+    }
+    .fashion-trends {
+        padding: 150px 0 50px 0;
+    }
+    .title-style{
+        height: 80px;
+    }
+    .offer img {
+        margin-bottom: -131px;
+        margin-top: 60px;
+    }
+    .fashion-blog{
+        margin-top: 100px;
+    }
+    .fashion-brands{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .brand-logo{
+        margin: 10px 50px 10px 65px;
+    }
+    .payment, .insta-img, .app{
+        margin: 20px 0;
+    }
+    .footer h5 {
+        margin-bottom: 15px;
+    }
+    .footer h5::before {
+        visibility: hidden;
+    }
+    .blog-img {
+        width: 325px;
+    }
+    .fashion-blog h5 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .payment img {
+        width: 260px;
+        margin-left: -10px;
+    }
+}
